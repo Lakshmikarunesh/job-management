@@ -3,6 +3,8 @@
 A modern job portal dashboard built with **React.js (Vite)** and **Tailwind CSS** for the frontend, and **FastAPI** with **SQLite** for the backend (optional). The app allows users to browse jobs, view details, and apply.
 
 ---
+## Frontend Live
+## Link : https://job-management-pied.vercel.app/
 
 ## 🛠 Tech Stack
 
