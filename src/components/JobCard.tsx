@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Clock, Users, DollarSign } from 'lucide-react';
+import { MapPin, Clock, Users, Banknote } from 'lucide-react';
 import { Job } from '../types/job';
 
 interface JobCardProps {
@@ -9,39 +9,29 @@ interface JobCardProps {
 
 const JobCard: React.FC<JobCardProps> = ({ job, onApply }) => {
   const formatSalary = (min: number, max: number) => {
-    const minLakhs = (min / 100000).toFixed(1);
-    const maxLakhs = (max / 100000).toFixed(1);
-    return `${minLakhs}LPA - ${maxLakhs}LPA`;
+    const avgSalary = ((min + max) / 2 / 100000).toFixed(0);
+    return `${avgSalary}LPA`;
   };
 
   const getCompanyIcon = (companyName: string, logo: string) => {
-    const iconMap: { [key: string]: string } = {
-      'Amazon': 'bg-orange-500',
-      'Tesla': 'bg-red-500',
-      'Google': 'bg-blue-500',
-      'Microsoft': 'bg-blue-600',
-      'Apple': 'bg-gray-800',
-      'Meta': 'bg-blue-700',
-      'Netflix': 'bg-red-600',
-      'Swiggy': 'bg-orange-400'
-    };
-
     return (
-      <div className={`w-12 h-12 rounded-full ${iconMap[companyName] || 'bg-gray-600'} flex items-center justify-center text-white text-xl font-bold`}>
-        {logo || companyName.charAt(0)}
-      </div>
+      <img 
+        src={logo || "https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=48&h=48&fit=crop"} 
+        alt={`${companyName} logo`}
+        className="w-12 h-12 rounded-full object-cover"
+      />
     );
   };
 
   return (
     <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 p-6 border border-gray-100">
       {/* Header */}
-      <div className="flex items-start justify-between mb-4">
+      <div className="flex items-center justify-between mb-4">
         <div className="flex items-center space-x-3">
           {getCompanyIcon(job.company_name, job.company_logo)}
-          <div className="bg-blue-50 text-blue-600 text-xs px-2 py-1 rounded-full font-medium">
-            {job.time_posted}
-          </div>
+        </div>
+        <div className="bg-blue-50 text-blue-600 text-xs px-2 py-1 rounded-full font-medium">
+          {job.time_posted}
         </div>
       </div>
 
@@ -55,11 +45,11 @@ const JobCard: React.FC<JobCardProps> = ({ job, onApply }) => {
           <span>{job.experience}</span>
         </div>
         <div className="flex items-center space-x-1">
-          <MapPin className="w-4 h-4" />
+          <Clock className="w-4 h-4" />
           <span>{job.work_mode}</span>
         </div>
         <div className="flex items-center space-x-1">
-          <DollarSign className="w-4 h-4" />
+          <Banknote className="w-4 h-4" />
           <span>{formatSalary(job.salary_min, job.salary_max)}</span>
         </div>
       </div>

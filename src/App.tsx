@@ -19,7 +19,7 @@ const mockJobs: Job[] = [
     description: "A user-friendly interface lets you browse stunning photos and videos. Filter destinations based on interests and travel style, and create personalized",
     created_at: "2024-01-20T10:00:00Z",
     is_published: true,
-    company_logo: "amazonLogo.png",
+    company_logo: "https://res.cloudinary.com/dmip7daqc/image/upload/v1753261737/Amazon-logo-meaning_jddazp.jpg",
     time_posted: "24h Ago"
   },
   {
@@ -35,7 +35,7 @@ const mockJobs: Job[] = [
     description: "A user-friendly interface lets you browse stunning photos and videos. Filter destinations based on interests and travel style, and create personalized",
     created_at: "2024-01-20T10:00:00Z",
     is_published: true,
-    company_logo: "🏎️",
+    company_logo: "https://res.cloudinary.com/dmip7daqc/image/upload/v1753261737/images_2_piylmf.png",
     time_posted: "24h Ago"
   },
   {
@@ -51,7 +51,7 @@ const mockJobs: Job[] = [
     description: "A user-friendly interface lets you browse stunning photos and videos. Filter destinations based on interests and travel style, and create personalized",
     created_at: "2024-01-20T10:00:00Z",
     is_published: true,
-    company_logo: "💡",
+    company_logo: "https://res.cloudinary.com/dmip7daqc/image/upload/v1753261738/Swiggy_logo_cgi4un.png",
     time_posted: "24h Ago"
   },
   {
@@ -67,7 +67,7 @@ const mockJobs: Job[] = [
     description: "A user-friendly interface lets you browse stunning photos and videos. Filter destinations based on interests and travel style, and create personalized",
     created_at: "2024-01-20T10:00:00Z",
     is_published: true,
-    company_logo: "🅰️",
+    company_logo: "https://res.cloudinary.com/dmip7daqc/image/upload/v1753261737/Amazon-logo-meaning_jddazp.jpg",
     time_posted: "24h Ago"
   },
   {
@@ -83,7 +83,7 @@ const mockJobs: Job[] = [
     description: "A user-friendly interface lets you browse stunning photos and videos. Filter destinations based on interests and travel style, and create personalized",
     created_at: "2024-01-20T10:00:00Z",
     is_published: true,
-    company_logo: "🏎️",
+    company_logo: "https://res.cloudinary.com/dmip7daqc/image/upload/v1753261737/images_2_piylmf.png",
     time_posted: "24h Ago"
   },
   {
@@ -99,7 +99,7 @@ const mockJobs: Job[] = [
     description: "A user-friendly interface lets you browse stunning photos and videos. Filter destinations based on interests and travel style, and create personalized",
     created_at: "2024-01-20T10:00:00Z",
     is_published: true,
-    company_logo: "💡",
+    company_logo: "https://res.cloudinary.com/dmip7daqc/image/upload/v1753261738/Swiggy_logo_cgi4un.png",
     time_posted: "24h Ago"
   },
   {
@@ -115,7 +115,7 @@ const mockJobs: Job[] = [
     description: "A user-friendly interface lets you browse stunning photos and videos. Filter destinations based on interests and travel style, and create personalized",
     created_at: "2024-01-20T10:00:00Z",
     is_published: true,
-    company_logo: "🅰️",
+    company_logo: "https://res.cloudinary.com/dmip7daqc/image/upload/v1753261737/Amazon-logo-meaning_jddazp.jpg",
     time_posted: "24h Ago"
   },
   {
@@ -131,7 +131,7 @@ const mockJobs: Job[] = [
     description: "A user-friendly interface lets you browse stunning photos and videos. Filter destinations based on interests and travel style, and create personalized",
     created_at: "2024-01-20T10:00:00Z",
     is_published: true,
-    company_logo: "🏎️",
+    company_logo: "https://res.cloudinary.com/dmip7daqc/image/upload/v1753261737/images_2_piylmf.png",
     time_posted: "24h Ago"
   }
 ];
